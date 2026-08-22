@@ -1,0 +1,20 @@
+{
+  "name": "Nexo Dimensional",
+  "version": "1.74.2",
+  "build": 1742,
+  "releasedAt": "2026-08-22",
+  "notes": "Actualizador via canal publico nexo-releases",
+  "repo": "jongamer117-ops/nexo-releases",
+  "branch": "master",
+  "files": [
+    "app.js",
+    "engine.js",
+    "styles.css",
+    "stage-flow.js",
+    "stage-flow.css",
+    "cards_db.js",
+    "tech_db.js",
+    "nexo-update.js",
+    "version.json"
+  ]
+}
