@@ -1,0 +1,143 @@
+
+/* —— Flujo de entrada 1.74.1: Inicio · Semilla · Universo · Personaje —— */
+.stage-hud { display: flex; flex-direction: column; }
+.stage-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--sp-5);
+  gap: var(--sp-4);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.stage-lead {
+  font-size: var(--text-sm);
+  color: var(--fg-muted);
+  text-align: center;
+  line-height: 1.45;
+  max-width: 22rem;
+  margin: 0 auto;
+}
+.stage-seed { margin-top: 0; }
+.stage-dock {
+  margin-top: auto;
+  width: 100%;
+  padding-top: var(--sp-4);
+}
+.nav-step {
+  font-family: var(--font-data);
+  font-size: var(--text-xs);
+  color: var(--fg-subtle);
+  letter-spacing: 0.06em;
+  min-width: 2.5rem;
+  text-align: right;
+}
+.stage-scroll { padding-bottom: 110px; }
+.universe-summary { display: flex; flex-direction: column; gap: 0.85rem; }
+.universe-hero {
+  padding: var(--sp-4);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+}
+.universe-seed {
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+.universe-title {
+  font-family: var(--font-ui);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.65rem;
+  line-height: 1.2;
+}
+.universe-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.universe-meta .chip {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--fg-muted);
+  background: var(--bg);
+}
+.universe-meta .chip b { color: var(--fg); font-weight: 600; }
+.universe-foot {
+  text-align: center;
+  font-size: var(--text-xs);
+  padding: 0.25rem 0 0.5rem;
+}
+
+.seed-hash-preview {
+  font-family: var(--font-data);
+  font-size: var(--text-xs);
+  color: var(--fg-subtle);
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-top: -0.35rem;
+}
+.seed-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.seed-actions .btn { width: 100%; min-height: var(--touch-min); }
+.seed-saved-block {
+  margin-top: 0.25rem;
+  padding: var(--sp-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+}
+.seed-saved-title {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg-subtle);
+  margin: 0 0 0.5rem;
+}
+.seed-saved-empty {
+  font-size: var(--text-xs);
+  color: var(--fg-subtle);
+  text-align: center;
+  margin: 0.25rem 0;
+}
+.seed-chip-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.35rem;
+  margin-bottom: 0.4rem;
+}
+.seed-chip {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  min-height: var(--touch-min);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-data);
+  cursor: pointer;
+}
+.seed-chip:active { background: var(--bg-subtle); }
+.seed-chip-text { font-size: 0.9rem; font-weight: 600; }
+.seed-chip-num { font-size: 0.7rem; color: var(--fg-muted); }
+.seed-chip-del {
+  min-width: var(--touch-min);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--fg-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.seed-chip-del:active { color: var(--red); }
